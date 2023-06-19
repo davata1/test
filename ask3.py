@@ -2,16 +2,15 @@ import streamlit as st
 import pandas as pd
 import string
 import re
+import nltk
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
 
 st.title("Prediksi tweettt covid 19")
 text = st.text_input("Masukkan teks")
 button = st.button("Hasil Prediiksi")
 
 if button:
-    import nltk
-    from nltk.corpus import stopwords
-    from nltk.tokenize import word_tokenize
-
     # Menginisialisasi Streamlit
     # st.title("Preprocessing pada Teks"
 
