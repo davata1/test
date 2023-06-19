@@ -1,9 +1,7 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 import string
 import re
-import scipy.sparse as sp
 
 st.title("Prediksi tweettt covid 19")
 text = st.text_input("Masukkan teks")
